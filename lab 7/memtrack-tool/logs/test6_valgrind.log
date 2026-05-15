@@ -1,0 +1,26 @@
+==17069== Memcheck, a memory error detector
+==17069== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17069== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==17069== Command: ./build/test6_valgrind
+==17069== Parent PID: 16949
+==17069== 
+==17069== 
+==17069== HEAP SUMMARY:
+==17069==     in use at exit: 1,024 bytes in 4 blocks
+==17069==   total heap usage: 13 allocs, 9 frees, 6,720 bytes allocated
+==17069== 
+==17069== 1,024 bytes in 4 blocks are definitely lost in loss record 1 of 1
+==17069==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==17069==    by 0x10924C: thread_work (test6_multithread.c:27)
+==17069==    by 0x4901AC2: start_thread (pthread_create.c:442)
+==17069==    by 0x4992A83: clone (clone.S:100)
+==17069== 
+==17069== LEAK SUMMARY:
+==17069==    definitely lost: 1,024 bytes in 4 blocks
+==17069==    indirectly lost: 0 bytes in 0 blocks
+==17069==      possibly lost: 0 bytes in 0 blocks
+==17069==    still reachable: 0 bytes in 0 blocks
+==17069==         suppressed: 0 bytes in 0 blocks
+==17069== 
+==17069== For lists of detected and suppressed errors, rerun with: -s
+==17069== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
