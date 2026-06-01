@@ -105,7 +105,7 @@ system-programming-labs/
 
 <tr>
 <td><b>Lab 7</b></td>
-<td>Linux I/O + <b>memtrack-tool</b> ⭐</td>
+<td>Linux I/O </td>
 <td>
   <code>open()</code> · <code>read()</code> · <code>write()</code> · <code>lseek()</code> · custom memory leak detector via <code>LD_PRELOAD</code>
 </td>
@@ -146,28 +146,6 @@ system-programming-labs/
 </tbody>
 </table>
 
----
-
-### ⭐ Spotlight: `memtrack-tool` (Lab 7)
-
-> A fully custom **memory leak detection library** built as part of Lab 7.
-
-```
-lab 7/memtrack-tool/
-├── src/            → memtrack.c · reporter.c
-├── include/        → memtrack.h
-├── tests/          → 6 test cases
-├── logs/           → Valgrind reference logs
-├── samples/        → sample_a.c · sample_b.c · sample_c.c
-└── docs/           → PDF documentation · user guide
-```
-
-| Feature | Details |
-|---|---|
-| 🔍 Intercepts | `malloc`, `calloc`, `realloc`, `free` via `LD_PRELOAD` |
-| 📋 Reports | Unfreed allocations with file name & line number |
-| 🔒 Thread-safe | Mutex-protected allocation tracking |
-| ✅ Test Cases | No leak · Single leak · Multi leak · Large leak · Invalid free · Multithreaded |
 
 ---
 
@@ -219,12 +197,6 @@ gcc -o output_name source_file.c
 gcc -o output_name source_file.c -lpthread
 ```
 
-**memtrack-tool:**
-```bash
-cd "lab 7/memtrack-tool"
-make
-LD_PRELOAD=./libmemtrack.so ./your_program
-```
 
 > ⚠️ **Windows users:** The included binaries are Linux ELF executables — they won't run on Windows natively. Use **WSL** or a Linux VM to run them.
 
