@@ -227,7 +227,7 @@ gcc -o output_name source_file.c -lpthread
 | Layer | Technologies |
 |---|---|
 | **Language** | C (C99/C11), Bash Shell |
-| **OS** | Linux (Ubuntu) |
+| **OS** | Linux (Ubuntu 22.04) |
 | **POSIX APIs** | `unistd.h` · `fcntl.h` · `sys/stat.h` · `pthread.h` · `signal.h` · `dirent.h` |
 | **Tools** | GCC · Valgrind · Make |
 
