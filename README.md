@@ -36,6 +36,8 @@ system-programming-labs/
 ├── 🔬 lab 9/         → File Copying & Monitoring (select)
 ├── 🔬 lab 10/        → Files and Directories
 ├── 🔬 lab 11/        → Traversing Directories
+├── 🔬 lab 12/        → Inter-Process Communication (IPC)
+├── 🔬 lab 13/        → Signals
 │
 ├── 📝 assig1/        → File Handling & Signal Handling
 └── 📝 assig2/        → Parallel Computing (Threads & Processes)
@@ -140,6 +142,22 @@ system-programming-labs/
 <td>Traversing Directories</td>
 <td>
   Recursive DFS traversal · <code>nftw()</code> · <code>find</code>-style filtering
+</td>
+</tr>
+
+<tr>
+<td><b>Lab 12</b></td>
+<td>Inter-Process Communication (IPC)</td>
+<td>
+  pipe() · mkfifo() · parent–child communication · process fan · FIFO (named pipes) · read()/write() · IPC · process synchronization
+</td>
+</tr>
+
+<tr>
+<td><b>Lab 13</b></td>
+<td>Signals</td>
+<td>
+  Signal handling · SIGCHLD · signal()/sigaction() · signal masks · sigprocmask() · pause() · sigsuspend() · sigwait() · process synchronization
 </td>
 </tr>
 
